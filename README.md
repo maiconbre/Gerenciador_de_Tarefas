@@ -4,7 +4,7 @@
 <br>
 <div align="center">
 
-![image](https://raw.githubusercontent.com/maiconbre/Gerenciador_de_Tarefas/main/img/Gfoto.png?token=GHSAT0AAAAAAB5GGVDKSK4JRPHZX6LUUNQCY6RZKHA)</div>
+![image](https://raw.githubusercontent.com/maiconbre/Gerenciador_de_Tarefas/main/img/Gfoto.png?token=GHSAT0AAAAAAB5GGVDLACIMVXDBCGNTROBOY6RZX5A)</div>
 
 
 # Instalação 🛠️
