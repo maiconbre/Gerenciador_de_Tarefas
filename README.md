@@ -1,5 +1,6 @@
 # Gerenciador de Tarefas 🗃
-> Este é um projeto simples de gerenciamento de tarefas feito com React. Ele permite adicionar, exibir e remover tarefas
+> Este projeto é um exemplo simples de um gerenciador de tarefas.<br> 
+Ele utiliza os hooks useState para gerenciar o estado da aplicação e permite adicionar, exibir e remover tarefas.
 
 <br>
 <div align="center">
