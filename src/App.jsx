@@ -4,38 +4,40 @@ import './App.css';
 function TaskManager() {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState('');
-  
+
   const addTask = () => {
     if (!newTask) return;
-    setTasks([...tasks, newTask]);
+    const task = { id: Math.random(), name: newTask };
+    setTasks([...tasks, task]);
     setNewTask('');
   };
 
-  const removerTask = taskRemovida => {
-    setTasks(tasks.filter(task => task !== taskRemovida));
+  const removerTask = id => {
+    setTasks(tasks.filter(task => task.id !== id));
   };
 
   return (
     <div className="task-manager">
       <h1>Gerenciador de Tarefas</h1>
       <form onSubmit={e => {
-          e.preventDefault();
-          addTask();
-        }}>
-        <input type="text" 
-               name="task" 
-               value={newTask} 
-               onChange={e => setNewTask(e.target.value)} 
-               placeholder="Escreva uma Tarefa" />
+        e.preventDefault();
+        addTask();
+      }}>
+        <input type="text"
+          name="task"
+          value={newTask}
+          onChange={e => setNewTask(e.target.value)}
+          placeholder="Escreva uma Tarefa" />
         <button type="submit">Adicionar</button>
       </form>
       <ul>
-        {tasks.map(task => (
-          <li key={task}>
+        {tasks.map((task, index) => (
+          <li key={index}>
             {task}
-            <button onClick={() => removerTask(task)}>X</button>
+            <button onClick={() => removerTask(task.id)}>X</button>
           </li>
         ))}
+
       </ul>
     </div>
   );
