@@ -31,9 +31,9 @@ function TaskManager() {
         <button type="submit">Adicionar</button>
       </form>
       <ul>
-        {tasks.map((task, index) => (
-          <li key={index}>
-            {task}
+        {tasks.map((task) => (
+          <li key={task.id}>
+            {task.name}
             <button onClick={() => removerTask(task.id)}>X</button>
           </li>
         ))}
